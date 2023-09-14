@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Offcanvas, OffcanvasBody } from "reactstrap";
+
 import call from "../assets/call.gif";
 import { Link } from "react-router-dom";
+
 import Animated from "../Animated";
 function AboutMe() {
   const [show, setShow] = useState(false);
