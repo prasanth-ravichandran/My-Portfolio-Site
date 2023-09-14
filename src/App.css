@@ -1,38 +1,435 @@
-.App {
+body {
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  font-family: "Roboto" sans-serif;
+}
+/* @media only screen (max-width:768px) { */
+
+/* } */
+
+#NavBar {
+  background-color: rgb(170, 169, 169, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/*.typewritter {
+  overflow: hidden;
+  animation: typing 3.5s steps(40), blink-caret 0.75s step-end infinite;
+  animation-name: typing, blink-caret;
+  border-right: 0.15em solid #0000;
+  border-right-width: 0.15em;
+  border-right-style: solid;
+  border-right-color: rgb(0, 0, 0);
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .CONTENT {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@keyframes cursor {
+  from,
+  to {
+    border-color: tranparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+
+#ProjectContainer {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px white;
+}*/
+
+/*.progress-bar {
+  width: 100px;
+  height: 19px;
+  border: 1px solid #020202;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(228, 228, 228);
+  background-color: rgb(206, 206, 206, 0.5);
+}
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  animation: progress 1500ms ease-out 1;
+  animation-duration: 3;
+  font-size: 10px;
+  color: #ffff;
+}
+.html {
+  width: 90%;
+}
+.css {
+  width: 90%;
+}
+.boot {
+  width: 80%;
+}
+.js {
+  width: 70%;
+}
+.react {
+  width: 75%;
+}
+.github {
+  width: 65%;
+}
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}*/
+
+.Contact_info {
+  border-radius: 10px;
+  background-color: rgb(206, 206, 206, 0.5);
+}
+.github {
+  margin-left: 40px;
+  padding-top: 20px;
+  padding-left: 150px;
+}
+.email {
+  font-family: initial;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+.phone {
+  margin-top: 15px;
+  padding-top: 10px;
+  margin-right: 190px;
+  font-family: initial;
+}
+.location {
+  margin-top: 25px;
+  padding-top: 5px;
+  padding-bottom: 130px;
+  margin-right: 60px;
+  font-family: initial;
+}
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.0378rem;
+  cursor: pointer;
+  color: black;
+}
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: rgb(0, 0, 0) !important;
+}
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-bottom: 0.1675rem solid orange;
+}
+.navbar-nav > li > a:hover {
+  border-top: 0.1675rem solid orange;
+}
+/*-------header-------------------*/
+.header-wrapper {
+  position: relative;
+  height: 90vh;
+}
+.btns {
+  opacity: 0.6;
+}
+.btns:hover {
+  transform: scale(1.1);
+}
+.main-info {
+  text-transform: uppercase;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-info {
+  font-family: "Roboto Condensed" sans-serif;
+  text-transform: uppercase;
+}
+.main-info h1 {
+  font-size: 2rem;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-main-offer {
+  border: 1px solid rgb(255, 255, 254);
+  border-radius: 10px;
+  padding: 10px 12px 12px 12px;
+  color: #fff;
+  margin: 2rem;
+  text-decoration: none;
+}
+.btn-main-offer:hover {
+  color: black;
+  background-color: #fff;
+}
+canvas {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation*/
+  border-right: 0.15em solid rgb(0, 0, 0); /*The typwriter cursor*/
+  white-space: nowrap; /*Keeps the content on a single line*/
+  margin: 0 auto; /*Gives that scrolling effect as the typing happens*/
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* The typing effect */
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+
+/***************************Navbar************************************** */
+
+/****************About me******************** */
+
+.words {
+  word-wrap: normal;
+}
+.about {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.aboutMe {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-family: cursive;
+}
+.btn-s:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .words {
+    font-size: 15px;
+  }
+}
+/*--------------------skill------------------*/
+
+/***************************SKILL************************************/
+.heading {
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  letter-spacing: 1px;
+  font-family: cursive;
+}
+.text-left {
+  font-family: cursive;
+}
+.skills {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  align-self: center;
+  text-align: center;
+}
+.size {
+  width: 75px;
+  height: 70px;
+  margin: 5px;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0, 0.3);
+}
+.size-2 {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+}
+.animea {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.size:hover {
+  transform: scale(1.1);
+  background: #fff;
+}
+.skill-set {
+  /* padding: 10px 10px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* border-radius: 20px; */
+  /* border: 1px solid black; */
+}
+.skill-content {
+  display: flex;
+  justify-content: center;
+}
+.skill-name {
+  font-size: 15px;
+  font-weight: 900;
+}
+.progress-bar {
+  width: 100px;
+  height: 15px;
+  margin-top: 10px;
+  border: 1px solid #020202;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgb(228, 228, 228);
+  background-color: rgb(206, 206, 206, 0.5) !important;
+}
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+  font-size: 10px;
+  color: #ffff !important;
+}
+.html {
+  width: 95%;
+}
+.css {
+  width: 95%;
+}
+.bootstrap {
+  width: 95%;
+}
+.javascript {
+  width: 75%;
+}
+.react {
+  width: 85%;
+}
+
+.github {
+  width: 65%;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
+@media only screen and (max-width: 488px) {
+  .animea {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .sub,
+  .mini {
+    font-size: 15px;
+  }
+  .pro {
+    width: 260px;
+  }
+}
+/*************************project****************************************/
+.content__project:hover {
+  scale: 1.07;
+}
+/*****************************contact***************************************/
+/*.contact {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 5rem 0;
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  border-right: 1px solid black;
+  font-family: cursive;
+}
+.head {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: cursive;
+}
+.subheading {
+  font-size: 1.5rem;
+}
+.main-head {
+  font-size: 3.5rem;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-family: cursive;
+  text-align: center;
+}
+.link:hover {
+  transform: scale(1.1);
+}*/
+/*****************************contact**************************/
+
+
