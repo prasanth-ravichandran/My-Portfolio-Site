@@ -111,7 +111,7 @@ function Content() {
                 </h1>
               </div>
               <a
-                href="https://drive.google.com/file/d/1NehxSzG-tBwFiPnKVDdmih7k0_TzxM1a/view?usp=sharing"
+                href="https://drive.google.com/file/d/1kEbW95dCJm6rPGgzZ4al2HfdjPUr6gR6/view?usp=sharing"
                 target="_blank"
                 className="btn-main-offer"
               >

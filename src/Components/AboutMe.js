@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Offcanvas, OffcanvasBody } from "reactstrap";
-import { motion } from "framer-motion";
 import call from "../assets/call.gif";
 import { Link } from "react-router-dom";
-import ArrowCircleRightSharpIcon from "@mui/icons-material/ArrowCircleRightSharp";
 import Animated from "../Animated";
 function AboutMe() {
   const [show, setShow] = useState(false);
