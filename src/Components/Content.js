@@ -107,7 +107,7 @@ function Content() {
               </h2>
               <div className="typewriter mt-4">
                 <h1 style={{ letterSpacing: "2px ", fontFamily: "initial" }}>
-                  UI/UX DESIGNER
+                  UI/UX DEVELOPER
                 </h1>
               </div>
               <a
